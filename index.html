@@ -1,0 +1,68 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Awesome books</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo"><a href="#">Awesome Books</a></div>
+        <ul class="nav-lists">
+            <li id="list" class="nav-list" data-id="list"><a href="#">List</a></li>
+            <li id="add-new" class="nav-list" data-id="add-new"><a href="#">Add new</a></li>
+            <li id="contact" class="nav-list" data-id="contact"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="date-time">
+        <h2 id="date">February 16th 2023, 7:08:32 AM</h2>
+    </div>
+
+    <main class="books-container">
+        <section class="render-books display" id="books-section">
+            <h2>All awesome books</h2><br>
+            <div class="book-store">
+                <ul id="container"></ul><br>
+            </div>
+        </section>
+
+        <section class="new-book-section display">
+            <form id="form" action="#" method="#">
+                <h2>Add a new book</h2>
+                <label for="book">
+                    <input type="text" name="book" required id="book" placeholder="Title">
+                </label>
+                    <label for="author">
+                    <input type="text" name="author" required id="author" placeholder="Author">
+                </label>
+                <div class="btn-container">
+                    <button type="submit" id="add-btn">Add</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="contact-info display" id="contact-section">
+            <h2>Contact Information</h2>
+
+            <div class="infos">
+                <p>Do you have any question or just want to say "Hello"?</p>
+                <p>You can reach out to us!</p>
+                <ul>
+                    <li>- Our e-mail mail@mail.com</li>
+                    <li>- Our phone Number: +25778123456</li>
+                    <li>- Our Address: StreetName 22, 84569 City, Country.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy COPYRIGHT</p>
+        <span>__</span>
+    </footer>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
