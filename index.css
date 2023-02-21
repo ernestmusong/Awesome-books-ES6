@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  padding: 1rem 3rem;
+}
+
+/* NAV BAR */
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border: 2px solid black;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+.date-time {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.nav-lists {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-list {
+  padding: 0.5rem 0.8rem;
+  border-right: 3px solid black;
+}
+
+.nav-list:nth-child(3) {
+  border-right: none;
+}
+
+.nav-list a {
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.nav-list a:hover {
+  cursor: pointer;
+  color: rgb(29, 29, 174);
+}
+
+.books-container {
+  width: 60vw;
+  margin: 0 auto;
+  display: flex;
+
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+button {
+  box-shadow: 2px 2px 4px black;
+}
+
+.book-store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  width: 100%;
+}
+
+.render-books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.container-list {
+  display: flex;
+  width: 55vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.container-list:nth-child(odd) {
+  background: lightgray;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.remove {
+  font-size: 1.2rem;
+  padding: 0.2rem 0.3rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 40vw;
+  padding: 1rem;
+}
+
+input {
+  padding: 0.5rem 0.5rem;
+  width: 25vw;
+  color: black;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+#form .btn-container {
+  width: 22vw;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#add-btn {
+  font-size: 1.1rem;
+  padding: 0.5rem 2rem;
+  color: black;
+}
+
+footer {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border: 2px solid black;
+}
+
+footer p {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.infos p {
+  font-size: 1.4rem;
+}
+
+.infos ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.infos li {
+  font-size: 1.2rem;
+}
+
+.display {
+  display: none;
+}
