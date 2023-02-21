@@ -45,7 +45,7 @@ data is stored in local storage. This data is retrieved from local storage anyti
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://ernestmusong.github.io/Awesome-Books/)
+- [Live Demo Link](https://ernestmusong.github.io/Awesome-books-ES6/#)
 
 ## 🚀 Project Presentation <a name="live-demo"></a>
 
@@ -60,7 +60,7 @@ data is stored in local storage. This data is retrieved from local storage anyti
 Clone this repository to your desired folder:
 sh
   cd my-folder
- git clone https://github.com/ernestmusong/Awesome-Books.git
+ git clone https://github.com/ernestmusong/Awesome-books-ES6.git
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -3,6 +3,14 @@ import Storage from './modules/storage.js';
 import UI from './modules/ui.js';
 import { DateTime } from './modules/luxon.js';
 
+/* eslint no-unused-vars: 0 */
+const newBookSection = document.querySelector('.new-book-section');
+const contactSection = document.getElementById('contact-section');
+const booksSection = document.getElementById('books-section');
+const list = document.getElementById('list');
+const addNew = document.getElementById('add-new');
+const newContact = document.getElementById('contact');
+
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
 document.querySelector('#form').addEventListener('submit', () => {
   const title = document.querySelector('#book').value;
@@ -20,14 +28,6 @@ document.querySelector('#container').addEventListener('click', (e) => {
     e.target.previousElementSibling.previousElementSibling.textContent,
   );
 });
-
-/* eslint no-unused-vars: 0 */
-const newBookSection = document.querySelector('.new-book-section');
-const contactSection = document.getElementById('contact-section');
-const booksSection = document.getElementById('books-section');
-const list = document.getElementById('list');
-const addNew = document.getElementById('add-new');
-const newContact = document.getElementById('contact');
 
 list.addEventListener('click', () => {
   booksSection.classList.remove('display');
