@@ -15,15 +15,15 @@ document.addEventListener('DOMContentLoaded', UI.displayBooks);
 document.querySelector('#form').addEventListener('submit', () => {
   const title = document.querySelector('#book').value;
   const author = document.querySelector('#author').value;
-  const book = new Book(title, author);
+  let id = Math.floor(Math.random() * 10000);
+  const book = new Book(title, author, id);
   UI.addBookToList(book);
   Storage.addBook(book);
   UI.clearFields();
 });
 
 document.querySelector('#container').addEventListener('click', (e) => {
-  UI.deleteBook(e.target);
-
+  UI.deleteBook(e.target, e.target.id);
   Storage.removeBook(
     e.target.previousElementSibling.previousElementSibling.textContent,
   );

@@ -16,12 +16,16 @@ export default class UI {
     by
     <h3>${book.author}</h3>
     </div>
-    <button type='submit' class='remove'>Remove</button>
+    <button id=${book.id} type='submit' class='remove'>Remove</button>
        `;
     list.appendChild(addedbook);
   }
 
-  static deleteBook(elem) {
+  static deleteBook(elem, id) {
+    let books = Storage.getBooks();
+    let filteredBooks = books.filter(item => item.id != id)
+    books = filteredBooks;
+    localStorage.setItem('books', JSON.stringify(books));
     if (elem.classList.contains('remove')) {
       elem.parentElement.remove();
     }
