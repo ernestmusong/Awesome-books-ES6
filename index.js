@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', UI.displayBooks);
 document.querySelector('#form').addEventListener('submit', () => {
   const title = document.querySelector('#book').value;
   const author = document.querySelector('#author').value;
-  let id = Math.floor(Math.random() * 10000);
+  const id = Math.floor(Math.random() * 10000);
   const book = new Book(title, author, id);
   UI.addBookToList(book);
   Storage.addBook(book);

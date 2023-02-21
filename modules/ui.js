@@ -23,7 +23,7 @@ export default class UI {
 
   static deleteBook(elem, id) {
     let books = Storage.getBooks();
-    let filteredBooks = books.filter(item => item.id != id)
+    const filteredBooks = books.filter((item) => item.id.toString() !== id.toString());
     books = filteredBooks;
     localStorage.setItem('books', JSON.stringify(books));
     if (elem.classList.contains('remove')) {
